@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrencies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.0.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="parallax-container">
+        <div class="parallax-layer">
+            <div class="background-image"></div>
+        </div>
+        <div class="parallax-layer">
+            <h1>Crypto Project</h1>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a id="homeLink" class="nav-link active" data-section="homeSection">Home</a>
+            </li>
+            <li class="nav-item">
+                <a id="reportsLink" class="nav-link" data-section="reportsSection">Live Reports</a>
+            </li>
+            <li class="nav-item">
+                <a id="aboutLink" class="nav-link" data-section="aboutSection">About</a>
+            </li>
+        </ul>
+
+        <section id="homeSection">
+            <h2 class="title">Currencies</h2>
+            <div id="coinsContainer">
+            </div>
+        </section>
+
+        <section id="reportsSection">
+            <h2 class="title">Reports</h2>
+        </section>
+
+        <section id="aboutSection">
+            <h2 class="title">About</h2>
+        </section>
+
+
+        <ul class="nav">
+            <li class="nav-item search-input">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search Symbol" />
+            </li>
+            <li class="nav-item">
+                <button id="search" class="btn btn-outline-warning my-2 my-sm-0" type="submit">
+                    Search
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+<div class="loader" id="loader">
+    <img src="assets/images/loading.svg" alt="loader" />
+</div>
+
+<div class="main d-flex justify-content-center"></div>
+
+</html>
